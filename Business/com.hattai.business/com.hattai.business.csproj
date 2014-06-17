@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{419B4611-A88A-462C-A567-B04EE3AD1604}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.hattai.business</RootNamespace>
+    <AssemblyName>com.hattai.business</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="entities\Payments.cs" />
+    <Compile Include="logic\PaymentsLogics.cs" />
+    <Compile Include="mappers\PaymentsMapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\com.hattai.core\com.hattai.core.csproj">
+      <Project>{3d316421-d322-48bf-add5-a356ec663ee1}</Project>
+      <Name>com.hattai.core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Core\com.hattai.payments\com.hattai.payments.csproj">
+      <Project>{1b3cf805-243d-46b9-92a6-6c0df8d02bb5}</Project>
+      <Name>com.hattai.payments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\com.hattai.data\com.hattai.data.csproj">
+      <Project>{35d8a917-7ac8-4c28-9267-f3d8d3b7659e}</Project>
+      <Name>com.hattai.data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\com.hattai.facades\com.hattai.facades.csproj">
+      <Project>{3a186d8b-625e-4b55-8e00-eb071b65fb88}</Project>
+      <Name>com.hattai.facades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\com.hattai.mappers\com.hattai.mappers.csproj">
+      <Project>{6fcffe8c-f93e-4d22-8703-4e6e8098784b}</Project>
+      <Name>com.hattai.mappers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\com.hattai.procedures\com.hattai.procedures.csproj">
+      <Project>{7c7c9a38-789f-4fa1-84f9-917f07cb65da}</Project>
+      <Name>com.hattai.procedures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Data\com.hattai.wrappers\com.hattai.wrappers.csproj">
+      <Project>{69aecd6f-3957-49e3-a514-94a6da5ba80c}</Project>
+      <Name>com.hattai.wrappers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

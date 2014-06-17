@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="com.hattai.payments.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="adyenMerchantAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">GoycooleaCL</Value>
+    </Setting>
+    <Setting Name="adyenDirectPaymentUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ws@Company.Goycoolea</Value>
+    </Setting>
+    <Setting Name="adyenDirectPaymentPwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Goycoolea1234$</Value>
+    </Setting>
+    <Setting Name="com_hattai_core_payments_AdyenSandbox_Payment" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://pal-test.adyen.com/pal/servlet/soap/Payment</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
