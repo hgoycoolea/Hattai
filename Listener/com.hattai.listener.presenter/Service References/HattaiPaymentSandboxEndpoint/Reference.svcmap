@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="26678cb5-0ee0-4825-b26d-1022748b29f9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1896/HattaiPaymentSandbox.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HattaiPaymentSandbox.wsdl" MetadataType="Wsdl" ID="d7e9df99-eead-42a2-bb6c-2e66f648682c" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?wsdl" />
+    <MetadataFile FileName="HattaiPaymentSandbox.xsd" MetadataType="Schema" ID="996aff75-5238-4c6f-8a25-ccaeb40ee13c" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?xsd=xsd2" />
+    <MetadataFile FileName="HattaiPaymentSandbox1.wsdl" MetadataType="Wsdl" ID="4a7180c2-acf7-4945-83ad-db135b5abb6c" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="HattaiPaymentSandbox.disco" MetadataType="Disco" ID="29098a91-bf6c-43b5-8fe7-492931398e07" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?disco" />
+    <MetadataFile FileName="HattaiPaymentSandbox1.xsd" MetadataType="Schema" ID="71348cbb-2892-408c-9fc2-2a4b8d678473" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?xsd=xsd1" />
+    <MetadataFile FileName="HattaiPaymentSandbox2.xsd" MetadataType="Schema" ID="2264d87f-a2df-4523-b2a6-ba03230512c2" SourceId="1" SourceUrl="http://localhost:1896/HattaiPaymentSandbox.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

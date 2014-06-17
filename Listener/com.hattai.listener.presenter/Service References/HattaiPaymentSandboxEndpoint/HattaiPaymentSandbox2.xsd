@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://2get.mobi/" elementFormDefault="qualified" targetNamespace="http://2get.mobi/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1896/HattaiPaymentSandbox.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="CommitToAdyenSandbox">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Amount" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cvc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExpMonth" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ExpYear" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CardHolderName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CardNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ShopperEmail" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Reference" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ip" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="SignatureImage" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="UID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Longitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Latitude" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Client" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CommitToAdyenSandboxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CommitToAdyenSandboxResult" nillable="true" type="q1:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

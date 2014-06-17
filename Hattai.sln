@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.hattai.wrappers", "Data
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{33DBFF31-2D6D-4715-AFFB-BB71E2D37C18}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServicePool", "ServicePool", "{FE189464-2A31-42B1-9BAF-C740380F9AA6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pool", "Pool", "{FE189464-2A31-42B1-9BAF-C740380F9AA6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Host", "Host", "{5A62FC54-AFCE-4F12-86C8-3DA918E49AD4}"
 EndProject
@@ -50,6 +50,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Listener", "Listener", "{6ECE3B3B-DE18-4CCD-8635-8FBF4374E154}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.hattai.listener", "Listener\com.hattai.listener\com.hattai.listener.csproj", "{E60FEA00-B3BA-4652-8BE4-EF56DD7DDF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.hattai.listener.presenter", "Listener\com.hattai.listener.presenter\com.hattai.listener.presenter.csproj", "{89BB17CA-C0AB-4A39-8691-34514267F045}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DD1F5015-D610-442D-9049-9B82EAAF24FD} = {DD1F5015-D610-442D-9049-9B82EAAF24FD}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -121,6 +126,10 @@ Global
 		{E60FEA00-B3BA-4652-8BE4-EF56DD7DDF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E60FEA00-B3BA-4652-8BE4-EF56DD7DDF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E60FEA00-B3BA-4652-8BE4-EF56DD7DDF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89BB17CA-C0AB-4A39-8691-34514267F045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89BB17CA-C0AB-4A39-8691-34514267F045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89BB17CA-C0AB-4A39-8691-34514267F045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89BB17CA-C0AB-4A39-8691-34514267F045}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,5 +158,6 @@ Global
 		{191F6606-4C9E-4A65-93F4-218F31C43C69} = {72D7632E-9F7A-4D42-96FE-A812C067E435}
 		{419B4611-A88A-462C-A567-B04EE3AD1604} = {0106B082-1B4C-4711-917A-FE7260F5FDE2}
 		{E60FEA00-B3BA-4652-8BE4-EF56DD7DDF51} = {6ECE3B3B-DE18-4CCD-8635-8FBF4374E154}
+		{89BB17CA-C0AB-4A39-8691-34514267F045} = {6ECE3B3B-DE18-4CCD-8635-8FBF4374E154}
 	EndGlobalSection
 EndGlobal
